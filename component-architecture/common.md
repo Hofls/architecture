@@ -8,6 +8,7 @@
             * Service
             * Validator
 * In package root should be only 1 class (as package interface), everything else should be hidden in folders (as implementation details)
+    * Package interface examples - @RestController, @Service, @Repository
  
 ## API
 `API` - defines interfaces through which interactions happen (REST/SOAP)
