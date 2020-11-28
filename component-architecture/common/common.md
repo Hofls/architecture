@@ -1,7 +1,7 @@
 ## Generic principles
 * [Folders structure](https://softwareengineering.stackexchange.com/questions/338597/folder-by-type-or-folder-by-feature)
     * Good approach is mixed: folders by feature => folder by type
-        * With single class in root folder (acts as interface for a package, everything else is implementation details)
+        * With single class in package root (as package interface), everything else should be hidden in folders (as implementation details)
     * For example:
         * Diagnosis
             * Converter (package)
@@ -9,8 +9,7 @@
             * Service (package)
             * Validator (package)
             * DiagnosisRepository (class)
-* In package root should be only 1 class (as package interface), everything else should be hidden in folders (as implementation details)
-    * Package interface examples - @RestController, @Service, @Repository
+    * Package interface examples - @RestController, @Service, @Repository   
  
 ## API
 `API` - defines interfaces through which interactions happen (REST/SOAP)
