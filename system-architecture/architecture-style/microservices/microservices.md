@@ -6,7 +6,7 @@
 	* Highly maintainable and testable (fast development and deployment)
 	* Easily scalabale
 * Drawbacks:
-	* Development complexity (inter-service communication, testing interactions between serices)
+	* Development complexity (inter-service communication, testing interactions between services)
 	* Deployment complexity 
 * Example:
     * News site page with weather broadcast, exchange rates, most popular news articles, feedback form. 
