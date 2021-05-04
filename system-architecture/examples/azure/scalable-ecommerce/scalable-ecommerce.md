@@ -1,3 +1,5 @@
+![](scalable-ecommerce-web-app.png)
+
 ### Dataflow
 1. User accesses the web app in browser and signs in.
 2. Browser pulls static resources such as images from Azure Content Delivery Network.

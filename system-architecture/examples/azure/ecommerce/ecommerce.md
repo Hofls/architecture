@@ -1,3 +1,5 @@
+![](ecommerce-website-running-in-secured-ase.png)
+
 ### Dataflow
 1. Customer accesses the public website in browser.
 2. Browser pulls static resources and product images from Azure Content Delivery Network.
