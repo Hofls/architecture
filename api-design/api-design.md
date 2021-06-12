@@ -12,3 +12,11 @@
     * GraphQL prevents over-fetching/under-fetching, allows quick front-end development
 * The product needs to be easily accessible
     * Quick and easy auth mechanism (or none at all), examples, great documentation
+* Reduce cognitive load for your users
+    * Consistent naming and code patterns
+    * Introduce as few new concepts as possible (mental models)
+    * Automate what can be automated
+* Provide helpful feedback to your users
+    * Catch user errors early and anticipate common mistakes
+    * Provide detailed feedback messages upon user error, possibly with hints now to fix error
+    * Have a place where users can ask questions
