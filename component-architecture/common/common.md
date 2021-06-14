@@ -2,6 +2,7 @@
 * [Folders structure](https://softwareengineering.stackexchange.com/questions/338597/folder-by-type-or-folder-by-feature)
 * Good approach is mixed: folders by feature => folder by type OR folders by type => folder by feature
     * With single class in package root (as package interface), everything else should be hidden in folders (as implementation details)
+* Bad approach example [(1700 files in one folder)](https://github.com/nodejs/node/tree/master/test/parallel) 
     
 ### Root folders structure
 * Root folders structure №1:
