@@ -40,12 +40,11 @@
         * `Diagnosis` (package)
         * `Call` (package)
 * Package interface examples - @RestController, @Service, @Repository   
- 
-## API
-`API` - defines interfaces through which interactions happen (REST/SOAP)
-* Trick to write good API:
-    * Think of yourself as of API consumer, what should perfect API look like?
-    * Write some client-side code for not existing API to have a better understanding
+    
+## Schemas/Diagrams
+* `Sequence diagram` - sequence of message exchange (e.g. method calls between systems)
+    * Good way to show how method works
+* 
 
 ## Architecture levels
 ![](images/component-architecture-levels.png)
