@@ -41,10 +41,13 @@
         * `Call` (package)
 * Package interface examples - @RestController, @Service, @Repository   
     
-## Schemas/Diagrams
+### Schemas/Diagrams
 * `Sequence diagram` - sequence of message exchange (e.g. method calls between systems)
     * Good way to show how method works
 * 
 
-## Architecture levels
+### Error handling
+* Unchecked exceptions in most cases better than checked
+    * Look at `java-dependencies` repository, `java-spring` package
+### Architecture levels
 ![](images/component-architecture-levels.png)
