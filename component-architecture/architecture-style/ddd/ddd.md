@@ -28,8 +28,8 @@
 * Project structure example:
     * `domain` - business logic, domain models/exceptions/validation/events
     * `application` - calls methods from other modules (e.g. `domain`, `infra`), error handling, data conversion/format
-    * `infrastructure` - technical stuff
-        * e.g. API (REST/GraphQL), Database, MQ, Metrics
+    * `infrastructure` - communication with external systems
+        * e.g. API client (GraphQL/REST/SOAP), Database, MQ, Metrics
 * Disadvantages:
     * Cost, complexity, time (suitable only for complex domains)
 * Advantages:
