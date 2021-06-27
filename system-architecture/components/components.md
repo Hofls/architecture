@@ -12,6 +12,6 @@
 * `Content delivery network (CDN)`
 * `Serverless`
 * `Reverse proxy`
-* `Load balancer`
-    * `API Gateway` is almost the same
+    * Functions: caching, filtering, load balancing, authentication, logging
+    * Almost the same thing: `Load balancer`, `API Gateway`
 * `Web Application Firewall`
