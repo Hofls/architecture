@@ -1,4 +1,20 @@
-### Api design
+## API Design
+#### API tech:
+* Outdated: SOAP, RPC
+* `REST` - 
+    * Write server-side code, generate client stub (swagger)
+* `GraphQL` - 
+    * Generate GraphQL schema from DB schema, then client stubs from GraphQL
+    * Client can request any fields it wants
+* `gRPC` - 
+    * Define API in structured documents, generate client/server stubs
+
+#### Data formats:
+* Outdated: XML
+* `Json` - human readable, parsable without a schema
+* `Protobuf` - human unreadable, not parsable without a schema, dense and fast
+
+#### Principles
 * Pretend you are API user, what would be simplest and most convenient API?
     * Write pseudocode for client-side to test different ideas
 * How easy is it to start using API?
