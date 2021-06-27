@@ -10,8 +10,12 @@
     * `NoSQL`
 * `In-memory data store`
 * `Content delivery network (CDN)`
-* `Serverless`
 * `Reverse proxy`
     * Functions: caching, filtering, load balancing, authentication, logging
     * Almost the same thing: `Load balancer`, `API Gateway`
 * `Web Application Firewall`
+
+#### Comparison
+* `Managed > Your own`
+    * Your own = high complexity, time-consuming (e.g. install, support, update)
+    * Examples: managed grafana/k8s/prometheus/docker/elk...
