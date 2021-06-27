@@ -22,3 +22,7 @@
 * `Components`
     * `Management/orchestration` - placing services on nodes, identifying failures, rebalancing (e.g. Kubernetes)
     * `API Gateway` - entry point for clients (auth, load balancing, logging, caching etc)
+* `Links`
+    * [Macroservices](https://www.reddit.com/r/programming/comments/nzemqn/disasters_ive_seen_in_a_microservices_world/)
+        * Less complexity, almost same benefits
+    
