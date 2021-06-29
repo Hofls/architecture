@@ -27,7 +27,7 @@
     * `Factory` - creates domain objects
 * Project structure example:
     * `domain` - business logic, domain models/exceptions/validation/events
-    * `application` - calls methods from other modules (e.g. `domain`, `infra`), error handling, data conversion/format
+    * `application` - calls methods from other modules (e.g. `domain`, `infra`), error handling, data conversion/format, transactions
     * `infrastructure` - communication with external systems
         * e.g. API client (GraphQL/REST/SOAP), Database, MQ, Metrics
 * Disadvantages:
