@@ -39,10 +39,7 @@
 * Advantages:
     * Communication, flexibility, maintainability
 * Examples
-    * Big:
-        * https://docs.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis
-        * https://github.com/ddd-by-examples/library
-        * https://github.com/peholmst/DDDExample
-    * Small:
-        * https://github.com/ketan-gote/ddd-example
-        * https://github.com/mkopylec/project-manager
+    * https://docs.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis
+    * https://github.com/ddd-by-examples/library
+    * https://github.com/peholmst/DDDExample
+    * https://github.com/mkopylec/project-manager/tree/step-10-finish
