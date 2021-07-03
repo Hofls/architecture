@@ -27,11 +27,13 @@
     * `Factory` - creates domain objects
 * Project structure example:
     * `domain` - business logic, domain models/exceptions/validation/events
-    * `application` - calls methods from other modules (e.g. `domain`, `infra`), error handling, data conversion/format
-        * @Service, @Transactional, @RestController
+        * Domain expert should be able to understand what's happening here (Ubiquitous language)
+    * `application` - drives workflow of an application, thin (work should be delegated to other layers)
+        * Calls methods from other modules (e.g. `domain`, `infra`), error handling, data conversion/format, events
+        * @Service, @Transactional, @RestController, @EventListener
     * `infrastructure` - communication with external systems
-        * e.g. API client (GraphQL/REST/SOAP), Database, MQ, Metrics
-        * @Repository
+        * e.g. API client (GraphQL/REST/SOAP), Database (+schema), MQ, Metrics, Hibernate config
+        * @Repository, @Entity, @Table
 * Disadvantages:
     * Cost, complexity, time (suitable only for complex domains)
 * Advantages:
