@@ -8,3 +8,7 @@
 * lucidchart.com
 * draw.io
 * visio
+
+## What to think about
+* How to handle errors and unexpected events
+    * What to do if different instances will try to edit same record at same time? (optimistic/pessimistic locking)
