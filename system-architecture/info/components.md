@@ -7,7 +7,8 @@
         * Complexity
 * `Database`
     * `Relational`
-    * `NoSQL`
+    * `NoSQL` - 
+        * Use if you can store data as single json document
 * `In-memory data store`
 * `Content delivery network (CDN)`
 * `Reverse proxy`
