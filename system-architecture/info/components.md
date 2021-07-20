@@ -7,8 +7,13 @@
         * Complexity
 * `Database`
     * `Relational`
+        * Use cases:
+            * Relational data (e.g. person.id, workplace.person_id, passenger.person_id, seller.person_id)
     * `NoSQL` - 
-        * Use if you can store data as single json document
+        * Use cases:
+            * If data is unstructured (different records have different fields)
+            * If you can store data as single json document
+        * Advantages: fast development time (just throw any json at it)
 * `In-memory data store`
 * `Content delivery network (CDN)`
 * `Reverse proxy`
