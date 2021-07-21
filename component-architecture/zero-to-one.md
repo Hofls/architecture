@@ -14,3 +14,9 @@
 * Nothing excessive
     * Want to write some code? Make sure it's necessary. Maybe app can survive without it?
 * ??? Programming language with weak/dynamic typing
+
+#### Contenders
+* Java
+    * 1. Write entity code manually
+    * 2. Generate liquibase changesets with JPA Buddy
+    * 3. Generate GraphQL API with ...
