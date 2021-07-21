@@ -4,7 +4,7 @@
 * `REST` - 
     * Write server-side code, generate client stub (swagger)
 * `GraphQL` - 
-    * Generate GraphQL schema from DB schema, then client stubs from GraphQL
+    * Generate GraphQL schema from DB schema, then client/server stubs from GraphQL
     * GraphQL prevents over-fetching/under-fetching (Client can request only fields it needs)
     * Allows quick front-end development (No need to wait for backend guys to implement a new endpoint)
 * `gRPC` - 
