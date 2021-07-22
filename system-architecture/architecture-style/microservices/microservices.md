@@ -25,4 +25,5 @@
 * `Links`
     * [Macroservices](https://www.reddit.com/r/programming/comments/nzemqn/disasters_ive_seen_in_a_microservices_world/)
         * Less complexity, almost same benefits
+    * [Practical Guide](https://www.marcobehler.com/guides/java-microservices-a-practical-guide)
     
