@@ -4,6 +4,18 @@
     * With single class in package root (as package interface), everything else should be hidden in folders (as implementation details)
 * Bad approach example [(1700 files in one folder)](https://github.com/nodejs/node/tree/master/test/parallel) 
     
+### Typical architecture
+* controller (rest/graphql api)
+    * dto
+* service (processes requests from controller)
+    * transformer
+    * validator
+* repository (app db)
+    * entity
+* external-service (integration)
+    * kafka
+    * user-data
+    
 ### Root folders structure
 * Root folders structure №1:
     * `common` (e.g. DateUtils)
