@@ -22,6 +22,16 @@
 * `Event sourcing` - persist state of entity as a sequence of state-changing events
     * Provides audit log and time travel
 
+#### Observability
+* `Log aggregation` - centralized logging service, has logs from each instance/container (e.g. graylog, elk)
+* `Application metrics` - gather data/statistics about service operation (e.g. prometheus + grafana)
+* `Audit logging` - record user activity in a database (e.g. JaVers, envers)
+* `Distributed tracing` - 
+    * Assign ID to external request, pass ID to all other services involved in handling the request.
+    * This way you can search in logs by ID, and find all related actions
+* `Exception tracking` - report all exceptions to a centralized tracking service, send notifications
+* `Health check API` - http endpoint that returns service health (for load balancing and monitoring)
+
 #### Decomposition
 
 #### Integration
@@ -31,8 +41,14 @@
 * `Backends for frontends` - each backend has its own API Gateway
     * One for android app, another for web app, another for 3rd party apps
 
+#### Reliability
+* `Circuit Breaker` - proxy, that stops working if failure rate exceeds a threshold
+    * To prevent further load on already overloaded service
 
-#### Observability
+#### Security
+* `Access Token` - token, securely stores information about user, that is exchanged between services (e.g. JWT)
+
+
 
 #### Cross-Cutting concerns
 
