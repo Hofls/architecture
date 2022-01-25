@@ -32,27 +32,23 @@
 * `Exception tracking` - report all exceptions to a centralized tracking service, send notifications
 * `Health check API` - http endpoint that returns service health (for load balancing and monitoring)
 
-#### Decomposition
-
 #### Integration
 * `API Gateway` - single entry point for all the clients.
     * Frontend shouldn't know about all the microservices. It should know only about API Gateway.
-    * Some requests are simply proxied to the appropriate service, others require multiple calls and calculations.
+    * Some requests are simply proxied to the appropriate service, others require multiple calls
+* `Composite microservice` - same as API Gateway, but with business logic (multiple service calls + calculations)
+* `Aggregator` - alternative name for API Gateway / Composite microservice
 * `Backends for frontends` - each backend has its own API Gateway
     * One for android app, another for web app, another for 3rd party apps
 
-#### Reliability
+#### Etc
 * `Circuit Breaker` - proxy, that stops working if failure rate exceeds a threshold
     * To prevent further load on already overloaded service
-
-#### Security
 * `Access Token` - token, securely stores information about user, that is exchanged between services (e.g. JWT)
-
-
-
-#### Cross-Cutting concerns
-
-#### Etc
+* `Configuration management` - automatic interaction with multiple servers to conduct sysadmin tasks (e.g. Puppet, Ansible, Chef)
+* `Service discovery` - send request through load balancer, that will pick one of service instances to handle it (e.g. nginx, ingress)
+* `Blue-Green Deployment` - two identical prod environments - one is old and serving requests, other is new and does nothing
+    * To update without any downtime - move all the traffic to the new environment
 * Run in containers
     * To take advantage of fixed and isolated environment, autoscaling, portability.
 * Externalized configuration
