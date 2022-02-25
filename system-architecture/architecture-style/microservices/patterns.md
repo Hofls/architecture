@@ -33,7 +33,7 @@
 * `Health check API` - http endpoint that returns service health (for load balancing and monitoring)
 
 #### Integration
-* `API Gateway` - single entry point for all the clients.
+* `API Gateway` aka `Facade` - single entry point for all the clients.
     * Frontend shouldn't know about all the microservices. It should know only about API Gateway.
     * Some requests are simply proxied to the appropriate service, others require multiple calls
 * `Composite microservice` - same as API Gateway, but with business logic (multiple service calls + calculations)
