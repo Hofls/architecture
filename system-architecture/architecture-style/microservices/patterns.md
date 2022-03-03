@@ -49,6 +49,8 @@
 * `Service discovery` - send request through load balancer, that will pick one of service instances to handle it (e.g. nginx, ingress)
 * `Blue-Green Deployment` - two identical prod environments - one is old and serving requests, other is new and does nothing
     * To update without any downtime - move all the traffic to the new environment
+* `Service mesh` - smart proxy (all traffic flows through it), that implements cross-cutting concerns:
+    * Service discovery, circuit-breaking, retries on request failures, load-balancing, logging, rate-limiting...
 * Run in containers
     * To take advantage of fixed and isolated environment, autoscaling, portability.
 * Externalized configuration
