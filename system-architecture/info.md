@@ -4,4 +4,9 @@
     * `Partition tolerance`: The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes
 * `PACELC theorem` - in case of network partitioning (P) one has to choose between availability (A) and consistency (C) (as per the CAP theorem), 
 but else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).
-
+* `Jamstack`:
+    * An entire frontend is prebuilt into highly optimized static pages and assets
+    * Frontend served directly from a CDN, reducing the cost, complexity and risk
+    * Use JavaScript to talk to backend services
+    * Use 3rd party APIs to outsource backend features like auth, payments, content management, search...
+    * If you need to implement your own backend - use serverless functions
