@@ -60,4 +60,4 @@
     * Messaging (Kafka, RabbitMQ)
 * Service Template
     * Project example with Security, Logging, DB, REST, Tests, etc. Speeds up new service development.
-
+* API Gateway, Service mesh, Load balancer - can mean the same thing. Lines are getting blurry.
