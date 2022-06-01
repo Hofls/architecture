@@ -10,4 +10,6 @@
 * Provide asynchronous support for long-running operations
     * One endpoint to start task (returns task id)
     * Another endpoint to check status and get result (when ready)
-
+* Use single endpoint for entity search, for example:
+    * Bad - findByRoomId, findByStatus, findByRoomIdAndStatus
+    * Good - find (roomId and status - optional parameters)
