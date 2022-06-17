@@ -3,6 +3,7 @@
     * Advantages: 
         * Guaranteed delivery (if system is down - messages just sit and wait) 
         * Limits load (systems can process messages at their own tempo)
+        * Decoupling (system that sends messages to the queue don't know who consumes it)
     * Disadvantages:
         * Complexity
 * `Database`
@@ -14,7 +15,7 @@
             * If data is unstructured (different records have different fields)
             * If you can store data as single json document
         * Advantages: fast development time (just throw any json at it)
-* `In-memory data store`
+* `In-memory data store` (as cache)
 * `Content delivery network (CDN)`
 * `Reverse proxy`
     * Functions: caching, filtering, load balancing, authentication, logging
