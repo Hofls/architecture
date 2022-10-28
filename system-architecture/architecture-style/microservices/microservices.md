@@ -19,9 +19,8 @@
     * News site page with weather broadcast, exchange rates, most popular news articles, feedback form. 
     * Each of those is independent backend service
 * `Archtecture`
-    * Frontend -> Facade (Optional) -> All other microservices
+    * Frontend -> Facade -> All other microservices
         * Microservices don't know about each other. If you need to send requests to multiple services - use facade.
-        * If you only need to call one method - call microservice directly
     * ![](microservices.png)
     * ![](microservices-logical.png)
 * `Components`
