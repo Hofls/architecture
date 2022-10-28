@@ -38,7 +38,7 @@
     * Some requests are simply proxied to the appropriate service, others require multiple calls
 * `Composite microservice` - same as API Gateway, but with business logic (multiple service calls + calculations)
 * `Aggregator` - alternative name for API Gateway / Composite microservice
-* `Backends for frontends` - each backend has its own API Gateway
+* `Backends for frontends` - each frontend has its own backend (with API Gateway)
     * One for android app, another for web app, another for 3rd party apps
 
 #### Etc
