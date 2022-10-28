@@ -4,6 +4,7 @@
 * `Advantages`. Each service is:
     * Focused (implements single business capability)
 	* Self-contained, independent, Loosely coupled with other services (enables independent work, scope of problem is small and simple)
+	    * E.g. each service has its own DB
 	* Highly maintainable and testable (fast development and deployment)
 	* Scalable - if one service experience high load - automatically deploy more instances
 	* Durable (fault isolation) - if one service fails and unable to start - others continue working (without features of fallen service)
@@ -18,6 +19,9 @@
     * News site page with weather broadcast, exchange rates, most popular news articles, feedback form. 
     * Each of those is independent backend service
 * `Archtecture`
+    * Frontend -> Facade (Optional) -> All other microservices
+        * Microservices don't know about each other. If you need to send requests to multiple services - use facade.
+        * If you only need to call one method - call microservice directly
     * ![](microservices.png)
     * ![](microservices-logical.png)
 * `Components`
