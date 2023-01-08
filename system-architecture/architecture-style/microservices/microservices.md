@@ -10,7 +10,7 @@
 	* Durable (fault isolation) - if one service fails and unable to start - others continue working (without features of fallen service)
 	* Communicates with others via API (implementation details hidden)
 * `Drawbacks`:
-	* Each service is simple, but overall app is complex (inter-service communication, testing interactions between services)
+	* Each service is simple, but overall app is complex (inter-service communication, testing, infrastructure, transactions)
 	* Hard to make some code changes (e.g. bumping library version or changing logging format in each microservice takes a long time)
 	* Network congestion and latency (all communications done via network)
 	* Data integrity (each service is responsible for its own data persistence). Embrace eventual consistency
