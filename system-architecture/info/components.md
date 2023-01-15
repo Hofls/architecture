@@ -15,6 +15,7 @@
             * If data is unstructured (different records have different fields)
             * If you can store data as single json document
         * Advantages: fast development time (just throw any json at it)
+    * `Standby` - total replica of main DB. If main DB dies - just start using standby.
 * `In-memory data store` (as cache)
 * `Content delivery network (CDN)`
 * `Reverse proxy`
