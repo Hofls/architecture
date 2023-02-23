@@ -26,7 +26,8 @@
 * `Components`
     * `Management/orchestration` - placing services on nodes, identifying failures, rebalancing (e.g. Kubernetes)
     * `API Gateway` - entry point for clients (auth, load balancing, logging, caching etc)
-* `Links`
+* `Etc`
+    * Use monorepo, otherwise to make 1 small change in 20 microservices - you have to edit 20 projects, create 20 branches, open 20 merge requests
     * [Macroservices](https://www.reddit.com/r/programming/comments/nzemqn/disasters_ive_seen_in_a_microservices_world/)
         * Less complexity, almost same benefits
     * [Practical Guide](https://www.marcobehler.com/guides/java-microservices-a-practical-guide)
