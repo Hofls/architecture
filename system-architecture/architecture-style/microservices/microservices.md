@@ -11,7 +11,9 @@
 	* Communicates with others via API (implementation details hidden)
 * `Drawbacks`:
 	* Each service is simple, but overall app is complex (inter-service communication, testing, infrastructure, transactions)
-	* Hard to make some code changes (e.g. bumping library version or changing logging format in each microservice takes a long time)
+	    * Want transaction in a monolith? Just add @Transactional. Want same across microservices? Good luck.
+	    * Want to gather data from different tables, with filtering and pagination? In a monolith - use `INNER JOIN`, in microservices - good luck.
+	* Hard to make global changes (e.g. bumping library version or changing logging format in each microservice takes a long time)
 	* Network congestion and latency (all communications done via network)
 	* Data integrity (each service is responsible for its own data persistence). Embrace eventual consistency
 	* Versioning. Changes in one service shouldn't break others
