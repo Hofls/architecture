@@ -22,6 +22,7 @@
     * Functions: caching, filtering, load balancing, authentication, logging
     * Almost the same thing: `Load balancer`, `API Gateway`
 * `Web Application Firewall`
+* `File storage` - e.g. Minio, S3, NFS, Database
 
 #### Comparison
 * `Managed > Your own`
