@@ -15,6 +15,7 @@
     * Almost the same thing: `Load balancer`, `API Gateway`
 * `Web Application Firewall`
 * `File storage` - e.g. Minio, S3, NFS, Database
+* `Cache` - Client / CDN / Reverse proxy / Database / Application (e.g. redis)
 
 #### Comparison
 * `Managed > Your own`
