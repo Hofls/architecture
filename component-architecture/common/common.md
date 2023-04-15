@@ -4,53 +4,27 @@
     * With single class in package root (as package interface), everything else should be hidden in folders (as implementation details)
 * Bad approach example [(1700 files in one folder)](https://github.com/nodejs/node/tree/master/test/parallel) 
     
-### Typical architecture
-* controller (rest/graphql api)
-    * dto
-* service (processes requests from controller)
-    * transformer
-    * validator
-* repository (app db)
-    * entity
-* external-service (integration)
-    * kafka
-    * user-data
-    
-### Root folders structure
-* Root folders structure №1:
-    * `common` (e.g. DateUtils)
-    * `rest`
-    * `service`
-    * `db`
-* Root folders structure №2:
-    * `inbound`
-        * `rest`
-        * `soap`
-    * `outbound`
-        * `db`
-        * `mq`
-        * `rest`
-    * `service`
-    * `common`
-    
-### Sub folders structure
-* Sub folders structure №1:
-    * `Diagnosis`
-        * `Converter` (package)
-        * `Dto` (package)
-        * `Service` (package)
-        * `Validator` (package)
-        * `DiagnosisRepository` (class, as package interface)
-* Sub folders structure №2:
-    * `Dto`
-        * `Diagnosis` (package)
-        * `Call` (package)
-    * `Service`
-        * `Diagnosis` (package)
-        * `Call` (package)
-    * `Repository`
-        * `Diagnosis` (package)
-        * `Call` (package)
+### Folders structure
+* Folder by feature (great):
+    * `diagnosis`
+        * `controller`
+        * `dto`
+        * `entity`
+        * `mapper`
+        * `repository`
+        * `service`
+        * `specification`
+        * `validator`
+* Folder by type (horrible):
+    * `dto`
+        * `diagnosis`
+        * `call`
+    * `entity`
+        * `diagnosis`
+        * `call`
+    * `mapper`
+        * `diagnosis`
+        * `call`
 * Package interface examples - @RestController, @Service, @Repository   
     
 ### Schemas/Diagrams
